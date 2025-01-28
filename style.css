@@ -145,5 +145,34 @@ hr {
     height: 380px;
     border: solid 1px white;
     border-radius: 15px;
+    overflow: scroll;
 }
 
+#contents {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#tripsList {
+    width: 90%;
+}
+.trips {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border: 1px whitesmoke solid;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+}
+
+.trips #bookTrip-btn {
+    background-color: rgb(99, 177, 99);
+    border-radius: 5px;
+    border: none;
+    padding: 5px 10px;
+    margin: 10px 0px;
+}
