@@ -22,12 +22,13 @@ document.querySelector("#btn-search").addEventListener("click", async (e) => {
     for (let i = 0; i < data.trips.length; i++) {
       document.querySelector("#tripsList").innerHTML += `
         <div class="trips">
-            <p class="trip">${data.trips[i].departure} > ${data.trips[i].arrival}</p>
+            <p class="trip">${data.trips[i].arrival} > ${data.trips[i].departure}</p>
             <p class="tripHour">${data.trips[i].hours}</p>
             <p class="tripPrice">${data.trips[i].price}</p>
-            <button type="button" id="bookTrip-btn">Book</button>
+            <button type="button" id="bookTrip-btn" data-trip-id="${data.trips[i]._id}">Book</button>
         </div>
         `;
+        //depart et arrivé inversé
     }
     /* document.querySelector("#image").style.display = "none";
     document.querySelector("#text").style.display = "none";
@@ -47,9 +48,19 @@ document.querySelector("#btn-search").addEventListener("click", async (e) => {
   }
   for (let i = 0; i < document.querySelectorAll("#bookTrip-btn").length; i++) {
     document.querySelectorAll('#bookTrip-btn')[i].addEventListener('click', async (e) => {
+        
+        let tripID = e.target.getAttribute('data-trip-id')
+        let cartID = e.target.getAttribute('data-trip-id')
+
         let data = {
-            _id: //Trip ID
+            tripID: tripID,
+            cartID: cartID,
+            /* departure: ,
+            arrival: ,
+            hours: ,
+            price:  */
           };
+          console.log(data);
 
         const response = await fetch(`${MYURL}/carts/save`, {
             method: "POST",
@@ -57,6 +68,7 @@ document.querySelector("#btn-search").addEventListener("click", async (e) => {
             body: JSON.stringify(data),
           });
         data = await response.json();
+        window.location.href = 'cart.html'
         })
     }
 });
