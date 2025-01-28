@@ -114,8 +114,8 @@ h1 {
     margin-bottom: 25px;
 }
 
-#image {
-    
+#image > img {
+    width: 150px;
 }
 
 #content-right {
