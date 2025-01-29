@@ -114,7 +114,10 @@ body {
             .item-list > span:last-child {
                 text-align: right;
             }
-        
+            .il-hour,
+            .il-price {
+                text-align: center;
+            }
 
     .total {
         background-color: #011647;
