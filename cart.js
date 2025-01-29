@@ -1,4 +1,4 @@
-const MYURL = 'https://tickethack-backend-pied.vercel.app';
+const MYURL = 'https://tickethack-backend-gamma.vercel.app';
 const ITEMS = document.querySelector('.items');
 
 function appendTripsInCart(trips) {

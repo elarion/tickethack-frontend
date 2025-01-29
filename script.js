@@ -1,4 +1,4 @@
-const MYURL = 'https://tickethack-backend-pied.vercel.app';
+const MYURL = 'https://tickethack-backend-gamma.vercel.app';
 
 document.querySelector('#travelDate').min = new Date().toISOString().split('T')[0];
 document.querySelector('#tripsList').style.display = 'none';
