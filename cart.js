@@ -10,7 +10,7 @@ function appendTripsInCart(trips) {
         ITEMS.innerHTML += `
             <li class="item-list">
                 <span class="il-trip">${trip.departure} > ${trip.arrival}</span>
-                <span class="il-hour">${trip.date}</span>
+                <span class="il-hour">${trip.hours}</span>
                 <span class="il-price"><span>${trip.price}</span>€</span>
                 <span class="il-delete"><button class="delete-button" data-tripID="${trip._id}">X</button></span>
             </li>
