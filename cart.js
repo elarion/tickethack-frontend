@@ -29,7 +29,7 @@ function calculateTotal() {
 
 async function getCarts() {
     try {
-        const response = await fetch(`${MYURL}/carts${window.location.search}`);
+        const response = await fetch(`${MYURL}/carts`);
         const data = await response.json();
 
         const { result, cart } = data;
