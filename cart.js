@@ -1,4 +1,4 @@
-const MYURL = 'http://localhost:3000';
+const MYURL = 'https://tickethack-backend-pied.vercel.app';
 const ITEMS = document.querySelector('.items');
 
 function appendTripsInCart(trips) {
