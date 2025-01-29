@@ -101,6 +101,10 @@ h1 {
     background-color: whitesmoke;
     border: none;
 }
+#search-departure, #search-arrival, #travelDate {
+    padding-left: 20px;
+}
+
 
 #btn-search {
     background-color: rgb(99, 177, 99);
