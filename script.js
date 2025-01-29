@@ -14,7 +14,7 @@ function appendTripsSearched(trips) {
 				<div class="trips">
 					<p class="trip">${trip.departure} > ${trip.arrival}</p>
 					<p class="tripHour">${trip.hours}</p>
-					<p class="tripPrice">${trip.price}</p>
+					<p class="tripPrice">${trip.price}€</p>
 					<button type="button" class="bookTrip-btn" id="bookTrip-btn" data-tripid="${trip._id}">Book</button>
 				</div>
 			`;
