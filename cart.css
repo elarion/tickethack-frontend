@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    appearance: none;
+    border: none;
+    background-color: #4EA891;
+    color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-color: lightgray;
+}
+
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 60px;
+
+    display: flex;
+    /* border-bottom: solid 1px black; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: white;
+}
+
+
+.logo-text {
+    color: rgb(95, 113, 93);
+    font-size: 30px;
+}
+
+.header-text {
+    color: black;
+    font-size: 20px;
+}
+
+#cart {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    max-width: 100%;
+    width: 600px;
+    /* padding: 1rem; */
+
+    background-color: #FFFFFF;
+
+    border-radius: 10px;
+    overflow: hidden;
+}
+    .card h2 {
+        margin-bottom: 0;
+        text-align: center;
+    }
+
+    .items {
+        padding: 1rem;
+    }
+        .item-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #F7F1F0;
+            padding:1rem 0.5rem;
+            margin-bottom: 1rem;
+            border-radius: 5px;
+        }
+            .item-list > span {
+                width: 25%;
+                flex: 1;
+            }
+            .item-list > span:last-child {
+                text-align: right;
+            }
+        
+
+    .total {
+        background-color: #011647;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #FFFFFF;
+        padding: 1rem;
+    }
+
+
+#has-cart {
+    display: none;
+}
+#empty-cart {
+    text-align: center;
+}
