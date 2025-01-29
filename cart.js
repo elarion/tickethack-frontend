@@ -65,7 +65,7 @@ function updateDOMCartWhenDelete(target) {
 
 async function deleteCart(target, cartID, tripID) {
     try {
-        const response = await fetch(`${MYURL}/carts/delete/${cartID}/${tripID}`, {
+        const response = await fetch(`${MYURL}/carts/delete/${tripID}`, {
             method: 'DELETE',
         });
 
