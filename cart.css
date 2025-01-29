@@ -8,6 +8,10 @@ ul {
     margin: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
 button {
     appearance: none;
     border: none;
@@ -42,6 +46,12 @@ body {
     background-color: white;
 }
 
+#header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 13%;
+}
 
 .logo-text {
     color: rgb(95, 113, 93);
@@ -75,6 +85,8 @@ body {
     .card h2 {
         margin-bottom: 0;
         text-align: center;
+        font-weight: 200;
+        font-size: 20px;
     }
 
     .items {
@@ -108,6 +120,19 @@ body {
         padding: 1rem;
     }
 
+    .bottom {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bottom p {
+        color:rgb(95, 113, 93)
+    }
+
+    hr {
+        width: 30%;
+    }
 
 #has-cart {
     display: none;

@@ -15,7 +15,6 @@ a {
 
 #header {
     display: flex;
-    border: solid 1px black;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px;
@@ -23,6 +22,12 @@ a {
     height: 60px;
 }
 
+#header-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 13%;
+}
 
 .logo-text {
     color: rgb(95, 113, 93);
@@ -127,11 +132,20 @@ h1 {
     margin-bottom: 20px;
 }
 
-hr {
+#lign {
     color: rgb(99, 177, 99);
     width: 70%;
     height: 3px;
     border: 0;
+    background-color: rgb(99, 177, 99);
+}
+
+#sep-search {
+    color: rgb(99, 177, 99);
+    width: 80%;
+    height: 1px;
+    border: 0;
+    margin: 0;
     background-color: rgb(99, 177, 99);
 }
 
@@ -160,6 +174,8 @@ hr {
 }
 
 #tripsList {
+    margin-top: 25px;
+    height: 100%;
     width: 90%;
 }
 .trips {
