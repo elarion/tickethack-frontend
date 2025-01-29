@@ -12,7 +12,7 @@ function appendTripsSearched(trips) {
 		for (const trip of trips) {
 			document.querySelector("#tripsList").innerHTML += `
 				<div class="trips">
-					<p class="trip">${trip.arrival} > ${trip.departure}</p>
+					<p class="trip">${trip.departure} > ${trip.arrival}</p>
 					<p class="tripHour">${trip.hours}</p>
 					<p class="tripPrice">${trip.price}</p>
 					<button type="button" class="bookTrip-btn" id="bookTrip-btn" data-tripid="${trip._id}">Book</button>
